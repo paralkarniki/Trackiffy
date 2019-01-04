@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".Homepage">
+
+    <TextView
+        android:id="@+id/txt_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome, (username)"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Amount spent over the last month:"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="$0.00"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Breakdown by payment method:"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cash: $0.00"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_cheque"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cheque: $0.00"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_debit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Debit: $0.00"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_credit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Credit: $0.00"
+            android:textSize="18dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_trans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go To Transactions" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log Out" />
+
+</LinearLayout>

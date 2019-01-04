@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".homepage">
+
+    <TextView
+        android:id="@+id/txt_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Record a New Transaction"
+        android:textSize="22sp" />
+
+    <EditText
+        android:id="@+id/edt_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="What did you buy?"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edt_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="Where did you buy it?"
+        android:inputType="textPersonName" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="$"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edt_cost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="How much did it cost?"
+            android:inputType="numberDecimal" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spn_pay_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:entries="@array/payment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical">
+
+        <CalendarView
+            android:id="@+id/clv_date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:maxDate="12/31/2020"
+            android:minDate="01/01/2014"
+            android:showWeekNumber="false" />
+
+        <Button
+            android:id="@+id/btn_confirmAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Confirm" />
+
+    </LinearLayout>
+
+</LinearLayout>
